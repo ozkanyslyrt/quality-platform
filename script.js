@@ -58,12 +58,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const articleCards = document.querySelectorAll(".article-card");
     let activeCategory = "all";
 
+    function normalizeSearchText(value) {
+        return (value || "")
+            .toLocaleLowerCase("tr-TR")
+            .normalize("NFD")
+            .replace(/[\\u0300-\\u036f]/g, "")
+            .replace(/ı/g, "i")
+            .trim();
+    }
+
     function filterArticles() {
-        const query = searchInput ? searchInput.value.toLowerCase().trim() : "";
+        const query = searchInput ? normalizeSearchText(searchInput.value) : "";
 
         articleCards.forEach(function (card) {
             const category = card.getAttribute("data-category") || "";
-            const text = card.textContent.toLowerCase();
+
+            const searchableText = [
+                card.textContent,
+                card.querySelector("[data-tr]")?.getAttribute("data-tr"),
+                card.querySelector("[data-en]")?.getAttribute("data-en")
+            ].filter(Boolean).join(" ");
+
+            const text = normalizeSearchText(searchableText);
             const categoryMatch = activeCategory === "all" || category === activeCategory;
             const searchMatch = !query || text.includes(query);
 
