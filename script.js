@@ -41,12 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (themeToggle) {
+        themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀" : "☾";
         themeToggle.addEventListener("click", function () {
             document.body.classList.toggle("dark-mode");
             localStorage.setItem(
                 "siteTheme",
                 document.body.classList.contains("dark-mode") ? "dark" : "light"
             );
+            themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀" : "☾";
         });
     }
 
@@ -171,4 +173,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         renderComments();
     }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const inputs = document.querySelectorAll("[data-tr-placeholder][data-en-placeholder]");
+    inputs.forEach(function (input) {
+        input.setAttribute(
+            "placeholder",
+            document.documentElement.lang === "en"
+                ? input.getAttribute("data-en-placeholder")
+                : input.getAttribute("data-tr-placeholder")
+        );
+    });
 });
