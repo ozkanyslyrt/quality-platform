@@ -1,9 +1,10 @@
 const languageButton = document.getElementById("languageToggle");
 
-let currentLanguage = "tr";
+let currentLanguage = localStorage.getItem("siteLanguage") || "tr";
 
 function changeLanguage(language) {
     currentLanguage = language;
+    localStorage.setItem("siteLanguage", language);
     document.documentElement.lang = language;
 
     const elements = document.querySelectorAll("[data-tr][data-en]");
@@ -27,7 +28,7 @@ if (languageButton) {
     });
 }
 
-changeLanguage("tr");
+changeLanguage(currentLanguage);
 
 /* =========================
    V2 FEATURES
