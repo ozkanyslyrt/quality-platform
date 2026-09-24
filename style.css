@@ -480,3 +480,138 @@ footer {
         text-align: center;
     }
 }
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.page-header {
+    padding: 90px 20px 60px;
+    text-align: center;
+    background: linear-gradient(135deg, #0b1f33, #102d49);
+}
+
+.page-header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #b9c7d6;
+    font-size: 18px;
+}
+
+
+/* ABOUT GRID */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-grid .card {
+    min-height: 200px;
+}
+
+
+/* TIMELINE */
+
+.timeline {
+    position: relative;
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 90px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #4da3ff;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-year {
+    font-weight: bold;
+    color: #4da3ff;
+    font-size: 20px;
+    text-align: right;
+}
+
+.timeline-content {
+    background: #13283d;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.timeline-content h3 {
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: #b9c7d6;
+}
+
+
+/* PATENT / IP */
+
+.patent-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.patent-cards .card {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.patent-cards .card:hover {
+    transform: translateY(-6px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .patent-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        padding-left: 50px;
+        gap: 10px;
+    }
+
+    .timeline-year {
+        text-align: left;
+    }
+}
