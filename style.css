@@ -1249,3 +1249,47 @@ body.dark-mode .filter-button:hover {
     margin-top: auto;
     padding-top: 10px;
 }
+
+
+/* OFFICIAL SOURCE BRAND BADGES */
+.article-source {
+    margin-top: 40px;
+}
+.source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    padding: 10px 14px;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.source-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    height: 30px;
+    padding: 0 7px;
+    border-radius: 6px;
+    background: var(--black);
+    color: var(--white);
+    font-size: 11px;
+    letter-spacing: .5px;
+}
+.source-link:hover {
+    border-color: var(--black);
+    transform: translateY(-1px);
+}
+body.dark-mode .source-link {
+    border-color: #333;
+}
+body.dark-mode .source-link:hover {
+    border-color: #fff;
+}
+body.dark-mode .source-logo {
+    background: #fff;
+    color: #080808;
+}
