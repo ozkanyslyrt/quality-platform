@@ -1,6 +1,6 @@
+```html
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +12,13 @@
 
 <body>
 
-    <!-- NAVIGATION -->
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
 
-    <header class="navbar">
+            <a href="index.html" class="logo">ÖY.</a>
 
-        <div class="container nav-container">
-
-            <a href="index.html" class="logo">
-                ÖY<span>.</span>
-            </a>
-
-            <nav class="nav-links">
+            <div class="nav-links">
 
                 <a href="index.html"
                    data-tr="Ana Sayfa"
@@ -38,7 +34,7 @@
 
                 <a href="education.html"
                    data-tr="Eğitimler"
-                   data-en="Training">
+                   data-en="Education">
                     Eğitimler
                 </a>
 
@@ -60,314 +56,82 @@
                     Bilgi Merkezi
                 </a>
 
-            </nav>
-
-            <div class="nav-right">
-
-                <a href="#"
-                   class="linkedin-btn"
-                   target="_blank">
-                    LinkedIn
-                </a>
-
-                <button id="languageToggle"
-                        class="language-btn">
-                    EN
-                </button>
-
             </div>
+
+            <button id="languageToggle" class="language-button">
+                EN
+            </button>
+
+        </div>
+    </nav>
+
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+
+        <div class="container">
+
+            <span class="section-label"
+                  data-tr="Hakkımda"
+                  data-en="About Me">
+                Hakkımda
+            </span>
+
+            <h1 data-tr="Özkan Yeşilyurt"
+                data-en="Özkan Yeşilyurt">
+                Özkan Yeşilyurt
+            </h1>
+
+            <p data-tr="Kalite yönetim sistemleri, belgelendirme, teknik dokümantasyon ve standartlar alanında profesyonel gelişim."
+               data-en="Professional development in quality management systems, certification, technical documentation and standards.">
+                Kalite yönetim sistemleri, belgelendirme, teknik dokümantasyon
+                ve standartlar alanında profesyonel gelişim.
+            </p>
 
         </div>
 
     </header>
 
 
-    <!-- PAGE HEADER -->
-
-    <section class="page-header">
-
-        <div class="container">
-
-            <p class="section-label">
-                01
-            </p>
-
-            <h1
-                data-tr="Hakkımda"
-                data-en="About Me">
-
-                Hakkımda
-
-            </h1>
-
-            <p
-                data-tr="Profesyonel gelişimim, ilgi alanlarım ve üzerinde çalıştığım konular."
-                data-en="My professional development, areas of interest and the subjects I work on.">
-
-                Profesyonel gelişimim, ilgi alanlarım ve üzerinde çalıştığım konular.
-
-            </p>
-
-        </div>
-
-    </section>
-
-
     <!-- ABOUT -->
+    <main>
 
-    <section class="section">
+        <section class="section">
 
-        <div class="container about-grid">
+            <div class="container">
 
-            <div>
+                <div class="about-grid">
 
-                <p class="section-label">
-                    PROFİL
-                </p>
+                    <div>
 
-                <h2
-                    data-tr="Özkan Yeşilyurt"
-                    data-en="Özkan Yeşilyurt">
+                        <span class="section-label"
+                              data-tr="Profil"
+                              data-en="Profile">
+                            Profil
+                        </span>
 
-                    Özkan Yeşilyurt
+                        <h2 data-tr="Kalite ve belgelendirme alanında kendimi geliştiriyorum."
+                            data-en="I am developing myself in quality and certification.">
+                            Kalite ve belgelendirme alanında kendimi geliştiriyorum.
+                        </h2>
 
-                </h2>
-
-            </div>
-
-
-            <div>
-
-                <p class="section-text"
-                   data-tr="Kalite yönetim sistemleri, belgelendirme, teknik dokümantasyon, standartlar ve fikri mülkiyet alanlarında kendimi geliştirdiğim bir profesyonel gelişim yolculuğundayım."
-                   data-en="I am on a professional development journey focused on quality management systems, certification, technical documentation, standards and intellectual property.">
-
-                    Kalite yönetim sistemleri, belgelendirme, teknik dokümantasyon,
-                    standartlar ve fikri mülkiyet alanlarında kendimi geliştirdiğim
-                    bir profesyonel gelişim yolculuğundayım.
-
-                </p>
-
-                <p class="section-text"
-                   data-tr="Bu platformu; öğrendiğim bilgileri düzenli şekilde paylaşmak, kişisel projelerimi sergilemek ve profesyonel gelişimimi belgelemek amacıyla oluşturuyorum."
-                   data-en="I am building this platform to share what I learn, showcase my personal projects and document my professional development.">
-
-                    Bu platformu; öğrendiğim bilgileri düzenli şekilde paylaşmak,
-                    kişisel projelerimi sergilemek ve profesyonel gelişimimi
-                    belgelemek amacıyla oluşturuyorum.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- FOCUS AREAS -->
-
-    <section class="areas">
-
-        <div class="container">
-
-            <p class="section-label">
-                02
-            </p>
-
-            <h2
-                data-tr="Odak Alanlarım"
-                data-en="Areas of Focus">
-
-                Odak Alanlarım
-
-            </h2>
-
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <div class="card-number">
-                        01
                     </div>
 
-                    <h3
-                        data-tr="Kalite Yönetimi"
-                        data-en="Quality Management">
+                    <div>
 
-                        Kalite Yönetimi
-
-                    </h3>
-
-                    <p
-                        data-tr="Kalite yönetim sistemleri ve ISO standartları üzerine çalışmalar."
-                        data-en="Studies on quality management systems and ISO standards.">
-
-                        Kalite yönetim sistemleri ve ISO standartları üzerine çalışmalar.
-
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-number">
-                        02
-                    </div>
-
-                    <h3
-                        data-tr="Belgelendirme"
-                        data-en="Certification">
-
-                        Belgelendirme
-
-                    </h3>
-
-                    <p
-                        data-tr="Belge takibi, uygunluk değerlendirmesi ve belgelendirme süreçleri."
-                        data-en="Document tracking, conformity assessment and certification processes.">
-
-                        Belge takibi, uygunluk değerlendirmesi ve belgelendirme süreçleri.
-
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-number">
-                        03
-                    </div>
-
-                    <h3
-                        data-tr="CE & Teknik Mevzuat"
-                        data-en="CE & Technical Legislation">
-
-                        CE & Teknik Mevzuat
-
-                    </h3>
-
-                    <p
-                        data-tr="CE işareti, uygunluk değerlendirmesi ve teknik mevzuat üzerine çalışmalar."
-                        data-en="Studies on CE marking, conformity assessment and technical legislation.">
-
-                        CE işareti, uygunluk değerlendirmesi ve teknik mevzuat üzerine çalışmalar.
-
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-number">
-                        04
-                    </div>
-
-                    <h3
-                        data-tr="Teknik Dokümantasyon"
-                        data-en="Technical Documentation">
-
-                        Teknik Dokümantasyon
-
-                    </h3>
-
-                    <p
-                        data-tr="Talimatlar, formlar, teknik dosyalar ve doküman yönetimi."
-                        data-en="Instructions, forms, technical files and document management.">
-
-                        Talimatlar, formlar, teknik dosyalar ve doküman yönetimi.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROFESSIONAL JOURNEY -->
-
-    <section class="section">
-
-        <div class="container">
-
-            <p class="section-label">
-                03
-            </p>
-
-            <h2
-                data-tr="Profesyonel Gelişim"
-                data-en="Professional Development">
-
-                Profesyonel Gelişim
-
-            </h2>
-
-
-            <div class="timeline">
-
-                <div class="timeline-item">
-
-                    <div class="timeline-year">
-                        2026
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3
-                            data-tr="Kalite & Belgelendirme Alanına Giriş"
-                            data-en="Entering Quality & Certification">
-
-                            Kalite & Belgelendirme Alanına Giriş
-
-                        </h3>
-
-                        <p
-                            data-tr="Kalite yönetim sistemleri, dokümantasyon, kalibrasyon ve belgelendirme süreçleri üzerine profesyonel deneyim kazanmaya başladım."
-                            data-en="Started gaining professional experience in quality management systems, documentation, calibration and certification processes.">
-
-                            Kalite yönetim sistemleri, dokümantasyon, kalibrasyon
-                            ve belgelendirme süreçleri üzerine profesyonel deneyim
-                            kazanmaya başladım.
-
+                        <p data-tr="Kalite yönetim sistemleri, belgelendirme, CE uygunluk süreçleri, teknik dokümantasyon, standartlar ve fikri mülkiyet alanlarında çalışmalar yürütüyorum."
+                           data-en="I work in the areas of quality management systems, certification, CE conformity processes, technical documentation, standards and intellectual property.">
+                            Kalite yönetim sistemleri, belgelendirme,
+                            CE uygunluk süreçleri, teknik dokümantasyon,
+                            standartlar ve fikri mülkiyet alanlarında
+                            çalışmalar yürütüyorum.
                         </p>
 
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-year">
-                        2026+
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3
-                            data-tr="Sürekli Öğrenme"
-                            data-en="Continuous Learning">
-
-                            Sürekli Öğrenme
-
-                        </h3>
-
-                        <p
-                            data-tr="ISO standartları, CE, teknik mevzuat, iç tetkik ve fikri mülkiyet alanlarında eğitim ve araştırmalarıma devam ediyorum."
-                            data-en="Continuing my education and research in ISO standards, CE, technical legislation, internal auditing and intellectual property.">
-
-                            ISO standartları, CE, teknik mevzuat, iç tetkik ve
-                            fikri mülkiyet alanlarında eğitim ve araştırmalarıma
-                            devam ediyorum.
-
+                        <p data-tr="Bu web sitesini mesleki gelişimimi, öğrendiğim bilgileri ve kişisel projelerimi düzenli şekilde paylaşmak amacıyla oluşturdum."
+                           data-en="I created this website to regularly share my professional development, knowledge I acquire and personal projects.">
+                            Bu web sitesini mesleki gelişimimi,
+                            öğrendiğim bilgileri ve kişisel projelerimi
+                            düzenli şekilde paylaşmak amacıyla oluşturdum.
                         </p>
 
                     </div>
@@ -376,148 +140,292 @@
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- PATENT & IP -->
+        <!-- FOCUS AREAS -->
+        <section class="section section-dark">
 
-    <section class="areas">
+            <div class="container">
 
-        <div class="container">
+                <div class="section-header">
 
-            <p class="section-label">
-                04
-            </p>
+                    <span class="section-label"
+                          data-tr="Odak Alanları"
+                          data-en="Focus Areas">
+                        Odak Alanları
+                    </span>
 
-            <h2
-                data-tr="Patent & Fikri Mülkiyet"
-                data-en="Patents & Intellectual Property">
-
-                Patent & Fikri Mülkiyet
-
-            </h2>
-
-            <p class="section-text"
-               data-tr="Patent, patent başvuruları, uluslararası başvurular, tasarım tescili ve fikri mülkiyet süreçleri üzerine çalışmalar ve araştırmalar."
-               data-en="Studies and research on patents, patent applications, international applications, design registration and intellectual property processes.">
-
-                Patent, patent başvuruları, uluslararası başvurular,
-                tasarım tescili ve fikri mülkiyet süreçleri üzerine
-                çalışmalar ve araştırmalar.
-
-            </p>
-
-
-            <div class="cards patent-cards">
-
-                <div class="card">
-
-                    <div class="card-number">
-                        IP 01
-                    </div>
-
-                    <h3
-                        data-tr="Patent"
-                        data-en="Patents">
-
-                        Patent
-
-                    </h3>
-
-                    <p
-                        data-tr="Patent başvuruları ve patent süreçleri hakkında çalışmalar."
-                        data-en="Studies on patent applications and patent processes.">
-
-                        Patent başvuruları ve patent süreçleri hakkında çalışmalar.
-
-                    </p>
+                    <h2 data-tr="Çalışma ve gelişim alanlarım."
+                        data-en="My areas of work and development.">
+                        Çalışma ve gelişim alanlarım.
+                    </h2>
 
                 </div>
 
 
-                <div class="card">
+                <div class="focus-grid">
 
-                    <div class="card-number">
-                        IP 02
+                    <div class="focus-card">
+
+                        <span>01</span>
+
+                        <h3 data-tr="Kalite Yönetimi"
+                            data-en="Quality Management">
+                            Kalite Yönetimi
+                        </h3>
+
+                        <p data-tr="Kalite yönetim sistemleri, süreçler ve kalite kayıtları."
+                           data-en="Quality management systems, processes and quality records.">
+                            Kalite yönetim sistemleri, süreçler ve kalite kayıtları.
+                        </p>
+
                     </div>
 
-                    <h3
-                        data-tr="PCT"
-                        data-en="PCT">
 
-                        PCT
+                    <div class="focus-card">
 
-                    </h3>
+                        <span>02</span>
 
-                    <p
-                        data-tr="Uluslararası patent başvuru sistemi ve başvuru süreçleri."
-                        data-en="International patent application system and related processes.">
+                        <h3 data-tr="Belgelendirme"
+                            data-en="Certification">
+                            Belgelendirme
+                        </h3>
 
-                        Uluslararası patent başvuru sistemi ve başvuru süreçleri.
+                        <p data-tr="Belgelendirme süreçleri ve uygunluk değerlendirme çalışmaları."
+                           data-en="Certification processes and conformity assessment activities.">
+                            Belgelendirme süreçleri ve uygunluk değerlendirme çalışmaları.
+                        </p>
 
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-number">
-                        IP 03
                     </div>
 
-                    <h3
-                        data-tr="Tasarım Tescili"
-                        data-en="Design Registration">
 
-                        Tasarım Tescili
+                    <div class="focus-card">
 
-                    </h3>
+                        <span>03</span>
 
-                    <p
-                        data-tr="Tasarım tescili ve fikri mülkiyet hakları üzerine çalışmalar."
-                        data-en="Studies on design registration and intellectual property rights.">
+                        <h3 data-tr="CE & Teknik Mevzuat"
+                            data-en="CE & Technical Legislation">
+                            CE & Teknik Mevzuat
+                        </h3>
 
-                        Tasarım tescili ve fikri mülkiyet hakları üzerine çalışmalar.
+                        <p data-tr="Direktifler, yönetmelikler, standartlar ve CE uygunluk süreçleri."
+                           data-en="Directives, regulations, standards and CE conformity processes.">
+                            Direktifler, yönetmelikler, standartlar ve CE uygunluk süreçleri.
+                        </p>
 
-                    </p>
+                    </div>
+
+
+                    <div class="focus-card">
+
+                        <span>04</span>
+
+                        <h3 data-tr="Teknik Dokümantasyon"
+                            data-en="Technical Documentation">
+                            Teknik Dokümantasyon
+                        </h3>
+
+                        <p data-tr="Teknik dosyalar, doküman kontrolü ve kalite kayıtları."
+                           data-en="Technical files, document control and quality records.">
+                            Teknik dosyalar, doküman kontrolü ve kalite kayıtları.
+                        </p>
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+
+        <!-- PROFESSIONAL DEVELOPMENT -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label"
+                          data-tr="Profesyonel Gelişim"
+                          data-en="Professional Development">
+                        Profesyonel Gelişim
+                    </span>
+
+                    <h2 data-tr="Mesleki gelişim sürecim."
+                        data-en="My professional development journey.">
+                        Mesleki gelişim sürecim.
+                    </h2>
+
+                </div>
+
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-year">
+                            2026
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3 data-tr="Kalite & Belgelendirme Alanına Geçiş"
+                                data-en="Moving into Quality & Certification">
+                                Kalite & Belgelendirme Alanına Geçiş
+                            </h3>
+
+                            <p data-tr="Kalite yönetim sistemleri, belgelendirme, teknik dokümantasyon ve uygunluk süreçleri üzerine profesyonel çalışma."
+                               data-en="Professional work focused on quality management systems, certification, technical documentation and conformity processes.">
+                                Kalite yönetim sistemleri, belgelendirme,
+                                teknik dokümantasyon ve uygunluk süreçleri
+                                üzerine profesyonel çalışma.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-year">
+                            2026+
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3 data-tr="Sürekli Öğrenme"
+                                data-en="Continuous Learning">
+                                Sürekli Öğrenme
+                            </h3>
+
+                            <p data-tr="ISO standartları, CE süreçleri, teknik mevzuat, denetim ve belgelendirme alanlarında gelişim."
+                               data-en="Continuous development in ISO standards, CE processes, technical legislation, auditing and certification.">
+                                ISO standartları, CE süreçleri,
+                                teknik mevzuat, denetim ve belgelendirme
+                                alanlarında gelişim.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PATENT & IP -->
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label"
+                          data-tr="Fikri Mülkiyet"
+                          data-en="Intellectual Property">
+                        Fikri Mülkiyet
+                    </span>
+
+                    <h2 data-tr="Patent ve fikri mülkiyet çalışmaları."
+                        data-en="Patent and intellectual property work.">
+                        Patent ve fikri mülkiyet çalışmaları.
+                    </h2>
+
+                    <p data-tr="Patent, PCT ve tasarım tescili gibi fikri mülkiyet süreçleri ve kayıtları üzerine çalışmalar."
+                       data-en="Work involving intellectual property processes and records such as patents, PCT applications and design registrations.">
+                        Patent, PCT ve tasarım tescili gibi fikri mülkiyet
+                        süreçleri ve kayıtları üzerine çalışmalar.
+                    </p>
+
+                </div>
+
+
+                <div class="patent-cards">
+
+                    <div class="focus-card">
+
+                        <span>01</span>
+
+                        <h3 data-tr="Patent"
+                            data-en="Patent">
+                            Patent
+                        </h3>
+
+                        <p data-tr="Patent başvuruları ve ilgili kayıtların takibi."
+                           data-en="Tracking patent applications and related records.">
+                            Patent başvuruları ve ilgili kayıtların takibi.
+                        </p>
+
+                    </div>
+
+
+                    <div class="focus-card">
+
+                        <span>02</span>
+
+                        <h3 data-tr="PCT"
+                            data-en="PCT">
+                            PCT
+                        </h3>
+
+                        <p data-tr="Uluslararası patent başvurularına ilişkin kayıt ve dokümantasyon."
+                           data-en="Records and documentation related to international patent applications.">
+                            Uluslararası patent başvurularına ilişkin
+                            kayıt ve dokümantasyon.
+                        </p>
+
+                    </div>
+
+
+                    <div class="focus-card">
+
+                        <span>03</span>
+
+                        <h3 data-tr="Tasarım Tescili"
+                            data-en="Design Registration">
+                            Tasarım Tescili
+                        </h3>
+
+                        <p data-tr="Tasarım tescili süreçlerine ilişkin kayıtların takibi."
+                           data-en="Tracking records related to design registration processes.">
+                            Tasarım tescili süreçlerine ilişkin kayıtların takibi.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
 
     <!-- FOOTER -->
+    <footer class="footer">
 
-    <footer>
-
-        <div class="container footer-content">
+        <div class="container">
 
             <p>
                 © 2026 Özkan Yeşilyurt
             </p>
 
-            <p
-                data-tr="Kişisel profesyonel platform"
-                data-en="Personal professional platform">
+            <div class="footer-links">
 
-                Kişisel profesyonel platform
+                <a href="#"
+                   data-tr="LinkedIn"
+                   data-en="LinkedIn">
+                    LinkedIn
+                </a>
 
-            </p>
-
-        </div>
-
-    </footer>
-
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
+                <a href="#"
+                   data-tr="GitHub"
+                   data-en="GitHub">
+```
