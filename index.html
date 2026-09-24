@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -11,301 +12,257 @@
 
 <body>
 
-    <!-- NAVIGATION -->
-    <header class="navbar">
-        <div class="container nav-container">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
 
-            <a href="index.html" class="logo">
-                ÖY<span>.</span>
-            </a>
+            <a href="index.html" class="logo">ÖY.</a>
 
-            <nav class="nav-links">
-                <a href="#about" data-tr="Hakkımda" data-en="About">Hakkımda</a>
-                <a href="#education" data-tr="Eğitimler" data-en="Training">Eğitimler</a>
-                <a href="#experience" data-tr="Deneyimler" data-en="Experience">Deneyimler</a>
-                <a href="#projects" data-tr="Projeler" data-en="Projects">Projeler</a>
-                <a href="#knowledge" data-tr="Bilgi Merkezi" data-en="Knowledge Center">Bilgi Merkezi</a>
-            </nav>
+            <div class="nav-links">
 
-            <div class="nav-right">
-
-                <a href="#" class="linkedin-btn" target="_blank">
-                    LinkedIn
+                <a href="index.html"
+                   data-tr="Ana Sayfa"
+                   data-en="Home">
+                    Ana Sayfa
                 </a>
 
-                <button id="languageToggle" class="language-btn">
-                    EN
-                </button>
+                <a href="about.html"
+                   data-tr="Hakkımda"
+                   data-en="About">
+                    Hakkımda
+                </a>
+
+                <a href="education.html"
+                   data-tr="Eğitimler"
+                   data-en="Education">
+                    Eğitimler
+                </a>
+
+                <a href="experience.html"
+                   data-tr="Deneyimler"
+                   data-en="Experience">
+                    Deneyimler
+                </a>
+
+                <a href="projects.html"
+                   data-tr="Projeler"
+                   data-en="Projects">
+                    Projeler
+                </a>
+
+                <a href="knowledge.html"
+                   data-tr="Bilgi Merkezi"
+                   data-en="Knowledge Center">
+                    Bilgi Merkezi
+                </a>
 
             </div>
 
+            <button id="languageToggle" class="language-button">
+                EN
+            </button>
+
         </div>
-    </header>
+    </nav>
 
 
     <!-- HERO -->
-    <main>
+    <section class="hero">
 
-        <section class="hero">
+        <div class="container hero-content">
 
-            <div class="container hero-content">
+            <p class="hero-label"
+               data-tr="Kalite • Belgelendirme • Teknik Dokümantasyon"
+               data-en="Quality • Certification • Technical Documentation">
+                Kalite • Belgelendirme • Teknik Dokümantasyon
+            </p>
 
-                <div class="hero-text">
+            <h1 data-tr="Kalite ve Belgelendirme Alanında Profesyonel Gelişim"
+                data-en="Professional Development in Quality and Certification">
+                Kalite ve Belgelendirme Alanında Profesyonel Gelişim
+            </h1>
 
-                    <p class="eyebrow"
-                       data-tr="KALİTE • BELGELENDİRME • TEKNİK DOKÜMANTASYON"
-                       data-en="QUALITY • CERTIFICATION • TECHNICAL DOCUMENTATION">
+            <p class="hero-text"
+               data-tr="Kalite yönetim sistemleri, belgelendirme, CE süreçleri, teknik dokümantasyon ve standartlar üzerine çalışmalarımı ve öğrenme sürecimi paylaşıyorum."
+               data-en="I share my work and learning journey in quality management systems, certification, CE processes, technical documentation and standards.">
+                Kalite yönetim sistemleri, belgelendirme, CE süreçleri,
+                teknik dokümantasyon ve standartlar üzerine çalışmalarımı
+                ve öğrenme sürecimi paylaşıyorum.
+            </p>
 
-                        KALİTE • BELGELENDİRME • TEKNİK DOKÜMANTASYON
+            <div class="hero-buttons">
 
-                    </p>
-
-                    <h1
-                        data-tr="Öğreniyorum.<br>Geliştiriyorum.<br><span>Paylaşıyorum.</span>"
-                        data-en="Learning.<br>Developing.<br><span>Sharing.</span>">
-
-                        Öğreniyorum.<br>
-                        Geliştiriyorum.<br>
-                        <span>Paylaşıyorum.</span>
-
-                    </h1>
-
-                    <p class="hero-description"
-                       data-tr="Kalite yönetimi, belgelendirme ve teknik dokümantasyon alanındaki bilgi ve deneyimlerimi paylaşmak için oluşturduğum kişisel profesyonel platform."
-                       data-en="A personal professional platform where I share my knowledge and experience in quality management, certification and technical documentation.">
-
-                        Kalite yönetimi, belgelendirme ve teknik dokümantasyon alanındaki
-                        bilgi ve deneyimlerimi paylaşmak için oluşturduğum kişisel
-                        profesyonel platform.
-
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#knowledge" class="btn primary"
-                           data-tr="Bilgi Merkezini Keşfet"
-                           data-en="Explore Knowledge Center">
-                            Bilgi Merkezini Keşfet
-                        </a>
-
-                        <a href="#about" class="btn secondary"
-                           data-tr="Hakkımda"
-                           data-en="About Me">
-                            Hakkımda
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="hero-card">
-
-                    <div class="profile-circle">
-                        ÖY
-                    </div>
-
-                    <h2>Özkan Yeşilyurt</h2>
-
-                    <p
-                        data-tr="Quality & Documentation"
-                        data-en="Quality & Documentation">
-                        Quality & Documentation
-                    </p>
-
-                    <div class="status">
-                        <span></span>
-                        <span
-                            data-tr="Geliştirme aşamasında"
-                            data-en="Currently developing">
-                            Geliştirme aşamasında
-                        </span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT -->
-        <section id="about" class="section">
-
-            <div class="container">
-
-                <p class="section-label">01</p>
-
-                <h2
-                    data-tr="Hakkımda"
-                    data-en="About Me">
+                <a href="about.html"
+                   class="btn btn-primary"
+                   data-tr="Hakkımda"
+                   data-en="About Me">
                     Hakkımda
-                </h2>
+                </a>
 
-                <p class="section-text"
-                   data-tr="Kalite yönetim sistemleri, belgelendirme, teknik dokümantasyon ve ilgili standartlar üzerine kendimi geliştirdiğim bir profesyonel gelişim yolculuğundayım."
-                   data-en="I am developing myself professionally in quality management systems, certification, technical documentation and related standards.">
-
-                    Kalite yönetim sistemleri, belgelendirme, teknik dokümantasyon
-                    ve ilgili standartlar üzerine kendimi geliştirdiğim bir profesyonel
-                    gelişim yolculuğundayım.
-
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- AREAS -->
-        <section class="areas">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="section-label">02</p>
-
-                    <h2
-                        data-tr="Odak Alanlarım"
-                        data-en="Areas of Focus">
-                        Odak Alanlarım
-                    </h2>
-
-                </div>
-
-
-                <div class="cards">
-
-                    <div class="card">
-                        <div class="card-number">01</div>
-
-                        <h3
-                            data-tr="Kalite Yönetimi"
-                            data-en="Quality Management">
-                            Kalite Yönetimi
-                        </h3>
-
-                        <p
-                            data-tr="ISO yönetim sistemleri ve kalite süreçleri."
-                            data-en="ISO management systems and quality processes.">
-                            ISO yönetim sistemleri ve kalite süreçleri.
-                        </p>
-                    </div>
-
-
-                    <div class="card">
-                        <div class="card-number">02</div>
-
-                        <h3
-                            data-tr="Belgelendirme"
-                            data-en="Certification">
-                            Belgelendirme
-                        </h3>
-
-                        <p
-                            data-tr="Belge takibi, uygunluk ve belgelendirme süreçleri."
-                            data-en="Document tracking, conformity and certification processes.">
-                            Belge takibi, uygunluk ve belgelendirme süreçleri.
-                        </p>
-                    </div>
-
-
-                    <div class="card">
-                        <div class="card-number">03</div>
-
-                        <h3
-                            data-tr="Teknik Dokümantasyon"
-                            data-en="Technical Documentation">
-                            Teknik Dokümantasyon
-                        </h3>
-
-                        <p
-                            data-tr="Talimatlar, formlar, teknik belgeler ve doküman yönetimi."
-                            data-en="Instructions, forms, technical documents and document management.">
-                            Talimatlar, formlar, teknik belgeler ve doküman yönetimi.
-                        </p>
-                    </div>
-
-
-                    <div class="card">
-                        <div class="card-number">04</div>
-
-                        <h3
-                            data-tr="Standartlar"
-                            data-en="Standards">
-                            Standartlar
-                        </h3>
-
-                        <p
-                            data-tr="ISO standartları, CE ve teknik mevzuat üzerine çalışmalar."
-                            data-en="Studies on ISO standards, CE and technical legislation.">
-                            ISO standartları, CE ve teknik mevzuat üzerine çalışmalar.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- COMING SOON -->
-        <section id="knowledge" class="section coming-soon">
-
-            <div class="container">
-
-                <p class="section-label">03</p>
-
-                <h2
-                    data-tr="Bilgi Merkezi"
-                    data-en="Knowledge Center">
+                <a href="knowledge.html"
+                   class="btn btn-secondary"
+                   data-tr="Bilgi Merkezi"
+                   data-en="Knowledge Center">
                     Bilgi Merkezi
-                </h2>
-
-                <p
-                    data-tr="ISO, CE, kalibrasyon, belgelendirme ve teknik dokümantasyon hakkında içerikler burada yer alacak."
-                    data-en="Articles about ISO, CE, calibration, certification and technical documentation will be published here.">
-
-                    ISO, CE, kalibrasyon, belgelendirme ve teknik dokümantasyon
-                    hakkında içerikler burada yer alacak.
-
-                </p>
-
-                <span class="coming-badge"
-                      data-tr="ÇOK YAKINDA"
-                      data-en="COMING SOON">
-                    ÇOK YAKINDA
-                </span>
+                </a>
 
             </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="container footer-content">
-
-            <p>
-                © 2026 Özkan Yeşilyurt
-            </p>
-
-            <p
-                data-tr="Kişisel profesyonel platform"
-                data-en="Personal professional platform">
-                Kişisel profesyonel platform
-            </p>
 
         </div>
 
-    </footer>
+    </section>
 
 
-    <script src="script.js"></script>
+    <!-- ABOUT -->
+    <section class="section">
 
-</body>
-</html>
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-label"
+                      data-tr="Hakkımda"
+                      data-en="About Me">
+                    Hakkımda
+                </span>
+
+                <h2 data-tr="Kalite, belgelendirme ve teknik dokümantasyon odaklı bir kariyer."
+                    data-en="A career focused on quality, certification and technical documentation.">
+                    Kalite, belgelendirme ve teknik dokümantasyon odaklı bir kariyer.
+                </h2>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div>
+                    <p data-tr="Kalite yönetim sistemleri, belgelendirme süreçleri, CE uygunluk çalışmaları ve teknik dokümantasyon alanlarında kendimi geliştirmeye devam ediyorum."
+                       data-en="I continue to develop myself in quality management systems, certification processes, CE conformity activities and technical documentation.">
+                        Kalite yönetim sistemleri, belgelendirme süreçleri,
+                        CE uygunluk çalışmaları ve teknik dokümantasyon
+                        alanlarında kendimi geliştirmeye devam ediyorum.
+                    </p>
+                </div>
+
+                <div>
+                    <a href="about.html"
+                       class="card-link"
+                       data-tr="Daha Fazla →"
+                       data-en="Learn More →">
+                        Daha Fazla →
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOCUS AREAS -->
+    <section class="section section-dark">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-label"
+                      data-tr="Odak Alanları"
+                      data-en="Focus Areas">
+                    Odak Alanları
+                </span>
+
+                <h2 data-tr="Çalıştığım ve geliştirdiğim alanlar."
+                    data-en="Areas I work and develop in.">
+                    Çalıştığım ve geliştirdiğim alanlar.
+                </h2>
+
+            </div>
+
+            <div class="focus-grid">
+
+                <div class="focus-card">
+                    <span>01</span>
+                    <h3 data-tr="Kalite Yönetimi"
+                        data-en="Quality Management">
+                        Kalite Yönetimi
+                    </h3>
+                    <p data-tr="Kalite yönetim sistemleri ve süreç yönetimi."
+                       data-en="Quality management systems and process management.">
+                        Kalite yönetim sistemleri ve süreç yönetimi.
+                    </p>
+                </div>
+
+                <div class="focus-card">
+                    <span>02</span>
+                    <h3 data-tr="Belgelendirme"
+                        data-en="Certification">
+                        Belgelendirme
+                    </h3>
+                    <p data-tr="Belgelendirme süreçleri ve uygunluk değerlendirmesi."
+                       data-en="Certification processes and conformity assessment.">
+                        Belgelendirme süreçleri ve uygunluk değerlendirmesi.
+                    </p>
+                </div>
+
+                <div class="focus-card">
+                    <span>03</span>
+                    <h3 data-tr="CE & Teknik Mevzuat"
+                        data-en="CE & Technical Legislation">
+                        CE & Teknik Mevzuat
+                    </h3>
+                    <p data-tr="CE işareti, direktifler, yönetmelikler ve uygunluk süreçleri."
+                       data-en="CE marking, directives, regulations and conformity processes.">
+                        CE işareti, direktifler, yönetmelikler ve uygunluk süreçleri.
+                    </p>
+                </div>
+
+                <div class="focus-card">
+                    <span>04</span>
+                    <h3 data-tr="Teknik Dokümantasyon"
+                        data-en="Technical Documentation">
+                        Teknik Dokümantasyon
+                    </h3>
+                    <p data-tr="Teknik dosyalar, kalite kayıtları ve doküman yönetimi."
+                       data-en="Technical files, quality records and document management.">
+                        Teknik dosyalar, kalite kayıtları ve doküman yönetimi.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- KNOWLEDGE CENTER -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-label"
+                      data-tr="Bilgi Merkezi"
+                      data-en="Knowledge Center">
+                    Bilgi Merkezi
+                </span>
+
+                <h2 data-tr="Öğrendiklerimi ve araştırmalarımı paylaşıyorum."
+                    data-en="Sharing what I learn and research.">
+                    Öğrendiklerimi ve araştırmalarımı paylaşıyorum.
+                </h2>
+
+                <p data-tr="Kalite, belgelendirme, CE, standartlar, kalibrasyon ve fikri mülkiyet alanlarında bilgi ve rehber içerikleri."
+                   data-en="Knowledge and guide content on quality, certification, CE, standards, calibration and intellectual property.">
+                    Kalite, belgelendirme, CE, standartlar, kalibrasyon ve
+                    fikri mülkiyet alanlarında bilgi ve rehber içerikleri.
+                </p>
+
+            </div>
+
+            <a href="knowledge.html"
+               class="btn btn-pri
+```
