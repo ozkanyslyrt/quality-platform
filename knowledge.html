@@ -1,792 +1,339 @@
+```html id="c5s6u2"
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Bilgi Merkezi | Özkan Yeşilyurt</title>
 
-    <link rel="stylesheet"
-          href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
 
-<!-- =========================
-     NAVBAR
-========================= -->
+            <a href="index.html" class="logo">ÖY.</a>
 
-<nav class="navbar">
+            <div class="nav-links">
 
-    <div class="nav-container">
+                <a href="index.html"
+                   data-tr="Ana Sayfa"
+                   data-en="Home">
+                    Ana Sayfa
+                </a>
 
-        <a href="index.html"
-           class="logo">
-            ÖY.
-        </a>
+                <a href="about.html"
+                   data-tr="Hakkımda"
+                   data-en="About">
+                    Hakkımda
+                </a>
+
+                <a href="education.html"
+                   data-tr="Eğitimler"
+                   data-en="Education">
+                    Eğitimler
+                </a>
+
+                <a href="experience.html"
+                   data-tr="Deneyimler"
+                   data-en="Experience">
+                    Deneyimler
+                </a>
+
+                <a href="projects.html"
+                   data-tr="Projeler"
+                   data-en="Projects">
+                    Projeler
+                </a>
+
+                <a href="knowledge.html"
+                   data-tr="Bilgi Merkezi"
+                   data-en="Knowledge Center">
+                    Bilgi Merkezi
+                </a>
+
+            </div>
+
+            <button id="languageToggle" class="language-button">
+                EN
+            </button>
+
+        </div>
+    </nav>
 
 
-        <div class="nav-links">
+    <!-- PAGE HEADER -->
+    <header class="page-header">
 
-            <a href="index.html"
-               data-tr="Ana Sayfa"
-               data-en="Home">
-                Ana Sayfa
-            </a>
+        <div class="container">
 
-            <a href="about.html"
-               data-tr="Hakkımda"
-               data-en="About">
-                Hakkımda
-            </a>
-
-            <a href="education.html"
-               data-tr="Eğitimler"
-               data-en="Education">
-                Eğitimler
-            </a>
-
-            <a href="experience.html"
-               data-tr="Deneyimler"
-               data-en="Experience">
-                Deneyimler
-            </a>
-
-            <a href="knowledge.html"
-               class="active"
-               data-tr="Bilgi Merkezi"
-               data-en="Knowledge Center">
+            <span class="section-label"
+                  data-tr="Bilgi Merkezi"
+                  data-en="Knowledge Center">
                 Bilgi Merkezi
-            </a>
-
-        </div>
-
-
-        <button id="languageToggle"
-                class="language-btn">
-            EN
-        </button>
-
-    </div>
-
-</nav>
-
-
-
-<!-- =========================
-     PAGE HEADER
-========================= -->
-
-<section class="page-header">
-
-    <div class="container">
-
-        <span class="section-label"
-              data-tr="BİLGİ MERKEZİ"
-              data-en="KNOWLEDGE CENTER">
-
-            BİLGİ MERKEZİ
-
-        </span>
-
-
-        <h1 data-tr="Bilgi ve Rehberler"
-            data-en="Knowledge & Guides">
-
-            Bilgi ve Rehberler
-
-        </h1>
-
-
-        <p data-tr="Kalite, belgelendirme, teknik dokümantasyon, standartlar, CE, kalibrasyon ve fikri mülkiyet alanlarında temel ve uygulamaya yönelik bilgiler."
-           data-en="Fundamental and practical information about quality, certification, technical documentation, standards, CE marking, calibration and intellectual property.">
-
-            Kalite, belgelendirme, teknik dokümantasyon, standartlar, CE, kalibrasyon ve fikri mülkiyet alanlarında temel ve uygulamaya yönelik bilgiler.
-
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     KNOWLEDGE AREAS
-========================= -->
-
-<section class="section">
-
-    <div class="container">
-
-
-        <div class="section-heading">
-
-            <span class="section-label"
-                  data-tr="BİLGİ ALANLARI"
-                  data-en="KNOWLEDGE AREAS">
-
-                BİLGİ ALANLARI
-
             </span>
 
+            <h1 data-tr="Bilgi ve Rehberler"
+                data-en="Knowledge & Guides">
+                Bilgi ve Rehberler
+            </h1>
 
-            <h2 data-tr="Çalışma Alanlarım"
-                data-en="My Areas of Focus">
-
-                Çalışma Alanlarım
-
-            </h2>
-
-
-            <p data-tr="Mesleki gelişimim ve çalışmalarım kapsamında ilgilendiğim temel alanlar."
-               data-en="The main areas I focus on as part of my professional development and work.">
-
-                Mesleki gelişimim ve çalışmalarım kapsamında ilgilendiğim temel alanlar.
-
+            <p data-tr="Kalite, belgelendirme, CE, teknik dokümantasyon, standartlar, kalibrasyon ve fikri mülkiyet alanlarında bilgi içerikleri."
+               data-en="Knowledge content on quality, certification, CE, technical documentation, standards, calibration and intellectual property.">
+                Kalite, belgelendirme, CE, teknik dokümantasyon,
+                standartlar, kalibrasyon ve fikri mülkiyet alanlarında
+                bilgi içerikleri.
             </p>
 
         </div>
 
+    </header>
 
 
-        <div class="focus-grid">
+    <main>
 
+        <!-- KNOWLEDGE AREAS -->
+        <section class="section">
 
-            <!-- 01 -->
+            <div class="container">
 
-            <div class="focus-card">
+                <div class="section-header">
 
-                <div class="focus-number">
-                    01
+                    <span class="section-label"
+                          data-tr="Bilgi Alanları"
+                          data-en="Knowledge Areas">
+                        Bilgi Alanları
+                    </span>
+
+                    <h2 data-tr="Çalıştığım ve araştırdığım konular."
+                        data-en="Topics I work and research on.">
+                        Çalıştığım ve araştırdığım konular.
+                    </h2>
+
                 </div>
 
-                <h3 data-tr="Kalite Yönetim Sistemleri"
-                    data-en="Quality Management Systems">
 
-                    Kalite Yönetim Sistemleri
+                <div class="focus-grid">
 
-                </h3>
+                    <div class="focus-card">
+                        <span>01</span>
+                        <h3 data-tr="Kalite Yönetim Sistemleri"
+                            data-en="Quality Management Systems">
+                            Kalite Yönetim Sistemleri
+                        </h3>
+                    </div>
 
-                <p data-tr="ISO 9001 ve kalite yönetim sistemlerinin temel prensipleri, süreç yaklaşımı ve sürekli iyileştirme."
-                   data-en="Fundamentals of ISO 9001, process approach and continual improvement.">
+                    <div class="focus-card">
+                        <span>02</span>
+                        <h3 data-tr="Belgelendirme"
+                            data-en="Certification">
+                            Belgelendirme
+                        </h3>
+                    </div>
 
-                    ISO 9001 ve kalite yönetim sistemlerinin temel prensipleri, süreç yaklaşımı ve sürekli iyileştirme.
+                    <div class="focus-card">
+                        <span>03</span>
+                        <h3 data-tr="CE ve Uygunluk"
+                            data-en="CE & Conformity">
+                            CE ve Uygunluk
+                        </h3>
+                    </div>
 
-                </p>
+                    <div class="focus-card">
+                        <span>04</span>
+                        <h3 data-tr="Teknik Dokümantasyon"
+                            data-en="Technical Documentation">
+                            Teknik Dokümantasyon
+                        </h3>
+                    </div>
 
-            </div>
+                    <div class="focus-card">
+                        <span>05</span>
+                        <h3 data-tr="Standartlar"
+                            data-en="Standards">
+                            Standartlar
+                        </h3>
+                    </div>
 
+                    <div class="focus-card">
+                        <span>06</span>
+                        <h3 data-tr="Kalibrasyon"
+                            data-en="Calibration">
+                            Kalibrasyon
+                        </h3>
+                    </div>
 
+                    <div class="focus-card">
+                        <span>07</span>
+                        <h3 data-tr="Denetim ve Uygunluk"
+                            data-en="Auditing & Conformity">
+                            Denetim ve Uygunluk
+                        </h3>
+                    </div>
 
-            <!-- 02 -->
+                    <div class="focus-card">
+                        <span>08</span>
+                        <h3 data-tr="Patent ve Fikri Mülkiyet"
+                            data-en="Patent & Intellectual Property">
+                            Patent ve Fikri Mülkiyet
+                        </h3>
+                    </div>
 
-            <div class="focus-card">
-
-                <div class="focus-number">
-                    02
                 </div>
 
-                <h3 data-tr="Belgelendirme"
-                    data-en="Certification">
-
-                    Belgelendirme
-
-                </h3>
-
-                <p data-tr="Yönetim sistemi ve ürün belgelendirme süreçleri, dokümantasyon ve uygunluk değerlendirme çalışmaları."
-                   data-en="Management system and product certification, documentation and conformity assessment.">
-
-                    Yönetim sistemi ve ürün belgelendirme süreçleri, dokümantasyon ve uygunluk değerlendirme çalışmaları.
-
-                </p>
-
             </div>
 
+        </section>
 
 
-            <!-- 03 -->
+        <!-- ARTICLES -->
+        <section class="section section-dark">
 
-            <div class="focus-card">
+            <div class="container">
 
-                <div class="focus-number">
-                    03
+                <div class="section-header">
+
+                    <span class="section-label"
+                          data-tr="Makaleler"
+                          data-en="Articles">
+                        Makaleler
+                    </span>
+
+                    <h2 data-tr="Temel konular hakkında rehber içerikler."
+                        data-en="Guide content on key topics.">
+                        Temel konular hakkında rehber içerikler.
+                    </h2>
+
                 </div>
 
-                <h3 data-tr="CE ve Uygunluk"
-                    data-en="CE & Conformity">
 
-                    CE ve Uygunluk
+                <div class="article-grid">
+
 
-                </h3>
-
-                <p data-tr="CE işareti, direktif ve yönetmelikler, uygunluk değerlendirmesi ve AB Uygunluk Beyanı."
-                   data-en="CE marking, directives, regulations, conformity assessment and EU Declaration of Conformity.">
-
-                    CE işareti, direktif ve yönetmelikler, uygunluk değerlendirmesi ve AB Uygunluk Beyanı.
-
-                </p>
-
-            </div>
-
-
-
-            <!-- 04 -->
-
-            <div class="focus-card">
-
-                <div class="focus-number">
-                    04
-                </div>
-
-                <h3 data-tr="Teknik Dokümantasyon"
-                    data-en="Technical Documentation">
-
-                    Teknik Dokümantasyon
-
-                </h3>
-
-                <p data-tr="Teknik dosyalar, test raporları, sertifikalar, teknik resimler ve uygunluk kayıtlarının yönetimi."
-                   data-en="Technical files, test reports, certificates, technical drawings and conformity records.">
-
-                    Teknik dosyalar, test raporları, sertifikalar, teknik resimler ve uygunluk kayıtlarının yönetimi.
-
-                </p>
-
-            </div>
-
-
-
-            <!-- 05 -->
-
-            <div class="focus-card">
-
-                <div class="focus-number">
-                    05
-                </div>
-
-                <h3 data-tr="Standartlar"
-                    data-en="Standards">
-
-                    Standartlar
-
-                </h3>
-
-                <p data-tr="Uluslararası ve Avrupa standartları, harmonize standartlar ve standartların uygunluk süreçlerindeki rolü."
-                   data-en="International and European standards, harmonised standards and their role in conformity processes.">
-
-                    Uluslararası ve Avrupa standartları, harmonize standartlar ve standartların uygunluk süreçlerindeki rolü.
-
-                </p>
-
-            </div>
-
-
-
-            <!-- 06 -->
-
-            <div class="focus-card">
-
-                <div class="focus-number">
-                    06
-                </div>
-
-                <h3 data-tr="Kalibrasyon"
-                    data-en="Calibration">
-
-                    Kalibrasyon
-
-                </h3>
-
-                <p data-tr="Ölçüm cihazlarının takibi, kalibrasyon planları, kayıtlar ve ölçüm güvenilirliğinin sağlanması."
-                   data-en="Monitoring measuring equipment, calibration plans, records and measurement reliability.">
-
-                    Ölçüm cihazlarının takibi, kalibrasyon planları, kayıtlar ve ölçüm güvenilirliğinin sağlanması.
-
-                </p>
-
-            </div>
-
-
-
-            <!-- 07 -->
-
-            <div class="focus-card">
-
-                <div class="focus-number">
-                    07
-                </div>
-
-                <h3 data-tr="Denetim ve Uygunluk"
-                    data-en="Audit & Conformity">
-
-                    Denetim ve Uygunluk
-
-                </h3>
-
-                <p data-tr="İç ve dış denetim hazırlıkları, uygunsuzlukların takibi ve uygunluk değerlendirme süreçleri."
-                   data-en="Internal and external audit preparation, nonconformity follow-up and conformity assessment.">
-
-                    İç ve dış denetim hazırlıkları, uygunsuzlukların takibi ve uygunluk değerlendirme süreçleri.
-
-                </p>
-
-            </div>
-
-
-
-            <!-- 08 -->
-
-            <div class="focus-card">
-
-                <div class="focus-number">
-                    08
-                </div>
-
-                <h3 data-tr="Patent ve Fikri Mülkiyet"
-                    data-en="Patent & Intellectual Property">
-
-                    Patent ve Fikri Mülkiyet
-
-                </h3>
-
-                <p data-tr="Patent, PCT, tasarım tescili ve fikri mülkiyet kayıtlarının temel yapısı ve takibi."
-                   data-en="Fundamentals and tracking of patents, PCT applications, design registrations and intellectual property records.">
-
-                    Patent, PCT, tasarım tescili ve fikri mülkiyet kayıtlarının temel yapısı ve takibi.
-
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     ARTICLES
-========================= -->
-
-<section class="section section-light">
-
-    <div class="container">
-
-
-        <div class="section-heading">
-
-            <span class="section-label"
-                  data-tr="BİLGİ VE REHBERLER"
-                  data-en="KNOWLEDGE & GUIDES">
-
-                BİLGİ VE REHBERLER
-
-            </span>
-
-
-            <h2 data-tr="Temel Konular"
-                data-en="Key Topics">
-
-                Temel Konular
-
-            </h2>
-
-
-            <p data-tr="Mesleki çalışmalarımda karşılaşılan temel konular hakkında açıklayıcı içerikler."
-               data-en="Explanatory content about key topics encountered in professional practice.">
-
-                Mesleki çalışmalarımda karşılaşılan temel konular hakkında açıklayıcı içerikler.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="article-grid">
-
-
-            <!-- =========================
-                 ARTICLE 1
-            ========================= -->
-
-            <article class="article-card">
-
-                <span class="article-category"
-                      data-tr="KALİTE"
-                      data-en="QUALITY">
-
-                    KALİTE
-
-                </span>
-
-
-                <h3 data-tr="ISO 9001 Nedir?"
-                    data-en="What is ISO 9001?">
-
-                    ISO 9001 Nedir?
-
-                </h3>
-
-
-                <p data-tr="ISO 9001'in amacı, kalite yönetim sistemi yaklaşımı ve temel yapısı."
-                   data-en="The purpose, quality management system approach and basic structure of ISO 9001.">
-
-                    ISO 9001'in amacı, kalite yönetim sistemi yaklaşımı ve temel yapısı.
-
-                </p>
-
-
-                <a href="iso-9001.html"
-                   class="article-link"
-                   data-tr="Makaleyi İncele →"
-                   data-en="Read Article →">
-
-                    Makaleyi İncele →
-
-                </a>
-
-            </article>
-
-
-
-            <!-- =========================
-                 ARTICLE 2
-            ========================= -->
-
-            <article class="article-card">
-
-                <span class="article-category"
-                      data-tr="CE"
-                      data-en="CE">
-
-                    CE
-
-                </span>
-
-
-                <h3 data-tr="CE İşareti Nedir?"
-                    data-en="What is CE Marking?">
-
-                    CE İşareti Nedir?
-
-                </h3>
-
-
-                <p data-tr="CE işaretinin anlamı, uygunluk değerlendirmesi ve üreticinin temel sorumlulukları."
-                   data-en="The meaning of CE marking, conformity assessment and the main responsibilities of manufacturers.">
-
-                    CE işaretinin anlamı, uygunluk değerlendirmesi ve üreticinin temel sorumlulukları.
-
-                </p>
-
-
-                <a href="ce-isareti.html"
-                   class="article-link"
-                   data-tr="Makaleyi İncele →"
-                   data-en="Read Article →">
-
-                    Makaleyi İncele →
-
-                </a>
-
-            </article>
-
-
-
-            <!-- =========================
-                 ARTICLE 3
-            ========================= -->
-
-            <article class="article-card">
-
-                <span class="article-category"
-                      data-tr="KALİBRASYON"
-                      data-en="CALIBRATION">
-
-                    KALİBRASYON
-
-                </span>
-
-
-                <h3 data-tr="Kalibrasyon Nedir?"
-                    data-en="What is Calibration?">
-
-                    Kalibrasyon Nedir?
-
-                </h3>
-
-
-                <p data-tr="Kalibrasyonun amacı, ölçüm cihazlarının kontrolü ve ölçüm sonuçlarının güvenilirliği."
-                   data-en="The purpose of calibration, control of measuring equipment and reliability of measurement results.">
-
-                    Kalibrasyonun amacı, ölçüm cihazlarının kontrolü ve ölçüm sonuçlarının güvenilirliği.
-
-                </p>
-
-
-                <a href="kalibrasyon.html"
-                   class="article-link"
-                   data-tr="Makaleyi İncele →"
-                   data-en="Read Article →">
-
-                    Makaleyi İncele →
-
-                </a>
-
-            </article>
-
-
-
-            <!-- =========================
-                 ARTICLE 4
-            ========================= -->
-
-            <article class="article-card">
-
-                <span class="article-category"
-                      data-tr="DOKÜMANTASYON"
-                      data-en="DOCUMENTATION">
-
-                    DOKÜMANTASYON
-
-                </span>
-
-
-                <h3 data-tr="Teknik Dosya Nedir?"
-                    data-en="What is a Technical File?">
-
-                    Teknik Dosya Nedir?
-
-                </h3>
-
-
-                <p data-tr="Teknik dosyanın amacı, içeriği ve uygunluk değerlendirme süreçlerindeki önemi."
-                   data-en="The purpose, contents and importance of technical documentation in conformity assessment.">
-
-                    Teknik dosyanın amacı, içeriği ve uygunluk değerlendirme süreçlerindeki önemi.
-
-                </p>
-
-
-                <a href="teknik-dosya.html"
-                   class="article-link"
-                   data-tr="Makaleyi İncele →"
-                   data-en="Read Article →">
-
-                    Makaleyi İncele →
-
-                </a>
-
-            </article>
-
-
-
-            <!-- =========================
-                 ARTICLE 5
-            ========================= -->
-
-            <article class="article-card">
-
-                <span class="article-category"
-                      data-tr="STANDARTLAR"
-                      data-en="STANDARDS">
-
-                    STANDARTLAR
-
-                </span>
-
-
-                <h3 data-tr="Standart Nedir?"
-                    data-en="What is a Standard?">
-
-                    Standart Nedir?
-
-                </h3>
-
-
-                <p data-tr="Standartların amacı, türleri ve ürün uygunluğu ile belgelendirme süreçlerindeki rolü."
-                   data-en="The purpose and types of standards and their role in product conformity and certification processes.">
-
-                    Standartların amacı, türleri ve ürün uygunluğu ile belgelendirme süreçlerindeki rolü.
-
-                </p>
-
-
-                <a href="standart-nedir.html"
-                   class="article-link"
-                   data-tr="Makaleyi İncele →"
-                   data-en="Read Article →">
-
-                    Makaleyi İncele →
-
-                </a>
-
-            </article>
-
-
-
-            <!-- =========================
-                 ARTICLE 6
-            ========================= -->
-
-            <article class="article-card">
-
-                <span class="article-category"
-                      data-tr="FİKRİ MÜLKİYET"
-                      data-en="INTELLECTUAL PROPERTY">
-
-                    FİKRİ MÜLKİYET
-
-                </span>
-
-
-                <h3 data-tr="Patent ve Tasarım Tescili Arasındaki Fark"
-                    data-en="Patent vs. Design Registration">
-
-                    Patent ve Tasarım Tescili Arasındaki Fark
-
-                </h3>
-
-
-                <p data-tr="Patent, faydalı model ve tasarım tescilinin temel farkları ve koruma alanları."
-                   data-en="The main differences and protection areas of patents, utility models and design registrations.">
-
-                    Patent, faydalı model ve tasarım tescilinin temel farkları ve koruma alanları.
-
-                </p>
-
-
-                <a href="patent-tasarim.html"
-                   class="article-link"
-                   data-tr="Makaleyi İncele →"
-                   data-en="Read Article →">
-
-                    Makaleyi İncele →
-
-                </a>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     PURPOSE
-========================= -->
-
-<section class="section">
-
-    <div class="container">
-
-        <div class="about-grid">
-
-
-            <div>
-
-                <span class="section-label"
-                      data-tr="AMAÇ"
-                      data-en="PURPOSE">
-
-                    AMAÇ
-
-                </span>
-
-
-                <h2 data-tr="Bilgi Paylaşıldıkça Değer Kazanır."
-                    data-en="Knowledge Gains Value When Shared.">
-
-                    Bilgi Paylaşıldıkça Değer Kazanır.
-
-                </h2>
-
-            </div>
-
-
-            <div>
-
-                <p data-tr="Bu bilgi merkezi; kalite, belgelendirme, teknik dokümantasyon, CE, standartlar, kalibrasyon ve fikri mülkiyet alanlarında öğrendiğim ve araştırdığım bilgileri düzenli şekilde paylaşmak amacıyla oluşturulmaktadır."
-                   data-en="This knowledge center is being developed to systematically share information I learn and research about quality, certification, technical documentation, CE marking, standards, calibration and intellectual property.">
-
-                    Bu bilgi merkezi; kalite, belgelendirme, teknik dokümantasyon, CE, standartlar, kalibrasyon ve fikri mülkiyet alanlarında öğrendiğim ve araştırdığım bilgileri düzenli şekilde paylaşmak amacıyla oluşturulmaktadır.
-
-                </p>
-
-
-                <p data-tr="İçerikler zaman içerisinde yeni konular, uygulama örnekleri ve rehberlerle genişletilecektir."
-                   data-en="The content will be expanded over time with new topics, practical examples and guides.">
-
-                    İçerikler zaman içerisinde yeni konular, uygulama örnekleri ve rehberlerle genişletilecektir.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer class="footer">
-
-    <div class="container">
-
-        <div class="footer-content">
-
-
-            <div>
-
-                <strong>ÖY.</strong>
-
-                <p data-tr="Kalite • Belgelendirme • Teknik Dokümantasyon"
-                   data-en="Quality • Certification • Technical Documentation">
-
-                    Kalite • Belgelendirme • Teknik Dokümantasyon
-
-                </p>
-
-            </div>
-
-
-            <p>
-                © 2026 Özkan Yeşilyurt
-            </p>
-
-
-        </div>
-
-    </div>
-
-</footer>
-
-
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
+                    <!-- ISO 9001 -->
+                    <div class="article-card">
+
+                        <span class="article-category"
+                              data-tr="Kalite Yönetim Sistemleri"
+                              data-en="Quality Management Systems">
+                            Kalite Yönetim Sistemleri
+                        </span>
+
+                        <h3 data-tr="ISO 9001 Nedir?"
+                            data-en="What is ISO 9001?">
+                            ISO 9001 Nedir?
+                        </h3>
+
+                        <p data-tr="ISO 9001 kalite yönetim sisteminin temel yapısı, amacı ve belgelendirme süreci."
+                           data-en="The basic structure, purpose and certification process of ISO 9001 quality management systems.">
+                            ISO 9001 kalite yönetim sisteminin temel yapısı,
+                            amacı ve belgelendirme süreci.
+                        </p>
+
+                        <a href="iso-9001.html"
+                           class="card-link"
+                           data-tr="Makaleyi İncele →"
+                           data-en="Read Article →">
+                            Makaleyi İncele →
+                        </a>
+
+                    </div>
+
+
+                    <!-- CE -->
+                    <div class="article-card">
+
+                        <span class="article-category"
+                              data-tr="CE ve Uygunluk"
+                              data-en="CE & Conformity">
+                            CE ve Uygunluk
+                        </span>
+
+                        <h3 data-tr="CE İşareti Nedir?"
+                            data-en="What is CE Marking?">
+                            CE İşareti Nedir?
+                        </h3>
+
+                        <p data-tr="CE işaretinin anlamı, uygunluk değerlendirmesi ve temel CE süreci."
+                           data-en="The meaning of CE marking, conformity assessment and the basic CE process.">
+                            CE işaretinin anlamı, uygunluk değerlendirmesi
+                            ve temel CE süreci.
+                        </p>
+
+                        <a href="ce-isareti.html"
+                           class="card-link"
+                           data-tr="Makaleyi İncele →"
+                           data-en="Read Article →">
+                            Makaleyi İncele →
+                        </a>
+
+                    </div>
+
+
+                    <!-- CALIBRATION -->
+                    <div class="article-card">
+
+                        <span class="article-category"
+                              data-tr="Kalibrasyon"
+                              data-en="Calibration">
+                            Kalibrasyon
+                        </span>
+
+                        <h3 data-tr="Kalibrasyon Nedir?"
+                            data-en="What is Calibration?">
+                            Kalibrasyon Nedir?
+                        </h3>
+
+                        <p data-tr="Kalibrasyonun amacı, ölçüm cihazları ve izlenebilirlik hakkında temel bilgiler."
+                           data-en="Basic information about calibration, measuring instruments and traceability.">
+                            Kalibrasyonun amacı, ölçüm cihazları ve
+                            izlenebilirlik hakkında temel bilgiler.
+                        </p>
+
+                        <a href="kalibrasyon.html"
+                           class="card-link"
+                           data-tr="Makaleyi İncele →"
+                           data-en="Read Article →">
+                            Makaleyi İncele →
+                        </a>
+
+                    </div>
+
+
+                    <!-- TECHNICAL FILE -->
+                    <div class="article-card">
+
+                        <span class="article-category"
+                              data-tr="Teknik Dokümantasyon"
+                              data-en="Technical Documentation">
+                            Teknik Dokümantasyon
+                        </span>
+
+                        <h3 data-tr="Teknik Dosya Nedir?"
+                            data-en="What is a Technical File?">
+                            Teknik Dosya Nedir?
+                        </h3>
+
+                        <p data-tr="Teknik dosyanın amacı ve uygunluk değerlendirme süreçlerindeki rolü."
+                           data-en="The purpose of a technical file and its role in conformity assessment processes.">
+                            Teknik dosyanın amacı ve uygunluk değerlendirme
+                            süreçlerindeki rolü.
+                        </p>
+
+                        <a href="teknik-dosya.html"
+                           class="card-link"
+                           data-tr="Makaleyi İncele →"
+                           data-en="Read Article →">
+                            Makaleyi İncele →
+                        </a>
+
+                    </div>
+
+
+                    <!-- STANDARDS -->
+                    <div class="article-card">
+```
