@@ -1,4 +1,3 @@
-```html id="c5s6u2"
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -64,6 +63,21 @@
             <div class="container">
 
                 <div class="section-header">
+                    <span class="section-label" data-tr="Arama" data-en="Search">Arama</span>
+                    <h2 data-tr="Bilgi merkezinde ara." data-en="Search the knowledge center.">Bilgi merkezinde ara.</h2>
+                    <div class="search-bar">
+                        <input id="articleSearch" type="search" data-tr-placeholder="Makale ara..." data-en-placeholder="Search articles..." placeholder="Makale ara..." aria-label="Makale ara">
+                    </div>
+                    <div class="category-filters">
+                        <button type="button" class="filter-button active" data-category="all" data-tr="Tümü" data-en="All">Tümü</button>
+                        <button type="button" class="filter-button" data-category="quality" data-tr="Kalite" data-en="Quality">Kalite</button>
+                        <button type="button" class="filter-button" data-category="ce" data-tr="CE" data-en="CE">CE</button>
+                        <button type="button" class="filter-button" data-category="calibration" data-tr="Kalibrasyon" data-en="Calibration">Kalibrasyon</button>
+                        <button type="button" class="filter-button" data-category="documentation" data-tr="Dokümantasyon" data-en="Documentation">Dokümantasyon</button>
+                        <button type="button" class="filter-button" data-category="standards" data-tr="Standartlar" data-en="Standards">Standartlar</button>
+                        <button type="button" class="filter-button" data-category="ip" data-tr="Fikri Mülkiyet" data-en="Intellectual Property">Fikri Mülkiyet</button>
+                    </div>
+                </div>
 
                     <span class="section-label"
                           data-tr="Bilgi Alanları"
@@ -177,7 +191,7 @@
 
 
                     <!-- ISO 9001 -->
-                    <div class="article-card">
+                    <div class="article-card" data-category="quality">
 
                         <span class="article-category"
                               data-tr="Kalite Yönetim Sistemleri"
@@ -207,7 +221,7 @@
 
 
                     <!-- CE -->
-                    <div class="article-card">
+                    <div class="article-card" data-category="ce">
 
                         <span class="article-category"
                               data-tr="CE ve Uygunluk"
@@ -237,7 +251,7 @@
 
 
                     <!-- CALIBRATION -->
-                    <div class="article-card">
+                    <div class="article-card" data-category="calibration">
 
                         <span class="article-category"
                               data-tr="Kalibrasyon"
@@ -267,7 +281,7 @@
 
 
                     <!-- TECHNICAL FILE -->
-                    <div class="article-card">
+                    <div class="article-card" data-category="documentation">
 
                         <span class="article-category"
                               data-tr="Teknik Dokümantasyon"
@@ -297,4 +311,4 @@
 
 
                     <!-- STANDARDS -->
-                    <div class="article-card">
+                    <div class="article-card" data-category="standards">
