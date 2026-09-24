@@ -3,47 +3,28 @@ const languageButton = document.getElementById("languageToggle");
 let currentLanguage = "tr";
 
 function changeLanguage(language) {
+    currentLanguage = language;
+    document.documentElement.lang = language;
 
-```
-currentLanguage = language;
+    const elements = document.querySelectorAll("[data-tr][data-en]");
 
-document.documentElement.lang = language;
+    elements.forEach(function (element) {
+        const text = element.getAttribute("data-" + language);
 
-const elements = document.querySelectorAll("[data-tr][data-en]");
+        if (text !== null) {
+            element.textContent = text;
+        }
+    });
 
-elements.forEach(function (element) {
-
-    const text = element.getAttribute("data-" + language);
-
-    if (text !== null) {
-        element.textContent = text;
+    if (languageButton) {
+        languageButton.textContent = language === "tr" ? "EN" : "TR";
     }
-
-});
-
-if (language === "tr") {
-    languageButton.textContent = "EN";
-} else {
-    languageButton.textContent = "TR";
-}
-```
-
 }
 
 if (languageButton) {
-
-```
-languageButton.addEventListener("click", function () {
-
-    if (currentLanguage === "tr") {
-        changeLanguage("en");
-    } else {
-        changeLanguage("tr");
-    }
-
-});
-```
-
+    languageButton.addEventListener("click", function () {
+        changeLanguage(currentLanguage === "tr" ? "en" : "tr");
+    });
 }
 
 changeLanguage("tr");
