@@ -1222,3 +1222,30 @@ body.dark-mode .filter-button:hover {
     background: #fff;
     color: #080808;
 }
+
+
+/* KNOWLEDGE CENTER - tighter article layout */
+.section-dark .article-grid {
+    margin-top: 20px;
+}
+
+.section-dark .section-header {
+    margin-bottom: 10px;
+}
+
+.knowledge-hero-space {
+    padding-bottom: 45px;
+}
+
+.article-card {
+    position: relative;
+}
+
+.article-card h3 {
+    margin-top: 2px;
+}
+
+.article-card .card-link {
+    margin-top: auto;
+    padding-top: 10px;
+}
