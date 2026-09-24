@@ -931,3 +931,88 @@ footer {
         text-align: center;
     }
 }
+ /* =========================
+    TIMELINE FINAL FIX
+ ========================= */
+
+.timeline {
+    max-width: 980px;
+}
+
+.timeline::before {
+    left: 160px;
+    width: 1px;
+
+    background: #bdbdbd;
+}
+
+.timeline-item {
+    grid-template-columns: 120px 1fr;
+    column-gap: 80px;
+}
+
+.timeline-year {
+    padding-top: 28px;
+    padding-right: 10px;
+
+    text-align: right;
+    white-space: nowrap;
+
+    color: #333333;
+}
+
+.timeline-content::before {
+    left: -86px;
+
+    top: 32px;
+
+    width: 8px;
+    height: 8px;
+
+    background: #3b82f6;
+
+    border: 3px solid #f7f7f7;
+
+    box-shadow: 0 0 0 1px #3b82f6;
+}
+
+
+/* =========================
+   MOBILE TIMELINE
+========================= */
+
+@media (max-width: 768px) {
+
+    .timeline {
+        max-width: 100%;
+    }
+
+    .timeline::before {
+        left: 18px;
+    }
+
+    .timeline-item {
+        display: block;
+
+        padding-left: 50px;
+
+        margin-bottom: 40px;
+    }
+
+    .timeline-year {
+        padding: 0;
+
+        margin-bottom: 10px;
+
+        text-align: left;
+    }
+
+    .timeline-content::before {
+        left: -38px;
+
+        top: 5px;
+
+        width: 8px;
+        height: 8px;
+    }
+}
